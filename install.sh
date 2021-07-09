@@ -22,8 +22,8 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
       mkdir /boot/grub/themes/
   fi 
   if [ -d "/boot/grub/themes/$THEME_NAME" ] then
-   echo "Deleting previously installed theme files of the ${THEME_NAME} theme"
-   rm -r /boot/grub/themes/${THEME_NAME}
+      echo "Deleting previously installed theme files of the ${THEME_NAME} theme"
+      rm -r /boot/grub/themes/${THEME_NAME}
   fi 
   
   echo "Copying theme files"
