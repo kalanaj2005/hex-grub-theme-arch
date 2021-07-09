@@ -48,5 +48,11 @@ if [ "$UID" -eq "$ROOT_UID" ]; then
   echo "Theme installed successfully"
 
 else
-  echo "Please run me as root"
+   read -p "[ trusted ] specify the root password : " -t${MAX_DELAY} -s
+  [[ -n "$REPLY" ]] && {
+    sudo -S <<< $REPLY $0
+  } || {
+    prompt  "\n Operation canceled  Bye"
+    exit 1
+  }
 fi
