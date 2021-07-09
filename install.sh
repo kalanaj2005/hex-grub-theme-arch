@@ -53,7 +53,6 @@ else
   [[ -n "$REPLY" ]] && {
     sudo -S <<< $REPLY $0
   } || {
-    prompt  "\n Operation canceled  Bye"
     exit 1
   }
 fi
