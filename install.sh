@@ -3,8 +3,9 @@
 ROOT_UID=0
 THEME_DIR="/boot/grub/themes"
 THEME_NAME=hex-arch
+MAX_DELAY=20
 
-echo "=========================================================================="
+echo -e "\n=========================================================================="
 echo "                       ${THEME_NAME}"
 echo "=========================================================================="
 
@@ -17,11 +18,11 @@ echo -e "\nChecking for root access...\n"
 # check root access
 if [ "$UID" -eq "$ROOT_UID" ]; then
 
-  if [ ! -d "/boot/grub/themes/" ] then
+  if [ ! -d "/boot/grub/themes/" ]; then
       echo "Creating themes directory"
       mkdir /boot/grub/themes/
   fi 
-  if [ -d "/boot/grub/themes/$THEME_NAME" ] then
+  if [ -d "/boot/grub/themes/$THEME_NAME" ]; then
       echo "Deleting previously installed theme files of the ${THEME_NAME} theme"
       rm -r /boot/grub/themes/${THEME_NAME}
   fi 
