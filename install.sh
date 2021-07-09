@@ -18,8 +18,8 @@ echo -e "\nChecking for root access...\n"
 if [ "$UID" -eq "$ROOT_UID" ]; then
 
   if [ ! -d "/boot/grub/themes/" ] then
-   echo "Creating themes directory"
-   mkdir /boot/grub/themes/
+      echo "Creating themes directory"
+      mkdir /boot/grub/themes/
   fi 
   if [ -d "/boot/grub/themes/$THEME_NAME" ] then
    echo "Deleting previously installed theme files of the ${THEME_NAME} theme"
