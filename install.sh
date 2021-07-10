@@ -1,4 +1,5 @@
 #!/bin/bash
+# Modified version from Cyberpunk-GRUB-Theme [https://github.com/NayamAmarshe/Cyberpunk-GRUB-Theme]
 
 ROOT_UID=0
 THEME_NAME=hex-arch
