@@ -26,4 +26,4 @@ sudo chmod a+x install.sh
 
 ## Credits
 _____________________________
-Based on ![Cyberpunk-GRUB-Theme](https://github.com/NayamAmarshe/Cyberpunk-GRUB-Theme/blob/main/LICENSE) by ![@NayamAmarshe](https://github.com/NayamAmarshe).
+Based on ![Cyberpunk-GRUB-Theme](https://github.com/NayamAmarshe/Cyberpunk-GRUB-Theme) by ![@NayamAmarshe](https://github.com/NayamAmarshe).
